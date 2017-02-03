@@ -1,0 +1,25 @@
+<!-- main application content contained within a side navigation-->
+<md-sidenav-container class="sidenav-container">
+
+    <!-- side menu -->
+    <md-sidenav #sidenav class="sidenav">
+        <md-list>
+         <md-list-item> <i class="material-icons main-menu-icon close" (click)="sidenav.close()">close</i><br/> </md-list-item>
+         <md-list-item> <strong>My Application</strong> </md-list-item>
+         <md-list-item> <a class="sidenav-link" routerLink="/tasks" (click)="sidenav.close()">Task List</a> </md-list-item>
+         <md-list-item> <a class="sidenav-link" routerLink="/about" (click)="sidenav.close()">About</a> </md-list-item>
+        </md-list>        
+    </md-sidenav>
+    
+    <!-- main site content -->
+    <div class="sidenav-content">
+
+        <!-- main menu header -->
+        <div class="main-menu-header">
+            <i class="material-icons main-menu-icon" (click)="sidenav.open()">menu</i> <strong>My Application</strong>
+        </div>
+        
+        <!-- current content as determined by application route -->
+        <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>
