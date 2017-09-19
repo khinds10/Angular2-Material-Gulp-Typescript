@@ -1,24 +1,25 @@
+<!-- main menu header -->
+<div class="main-menu-header">
+    <span [ngSwitch]="sidenav.opened">
+        <template [ngSwitchCase]="false"><i class="material-icons main-menu-item" (click)="sidenav.toggle()">menu</i></template>
+        <template [ngSwitchCase]="true"><i class="material-icons main-menu-item" (click)="sidenav.toggle()">chevron_left</i></template>        
+    </span>
+    <strong class="main-menu-item" (click)="sidenav.toggle()">My Application</strong>
+</div>
+
 <!-- main application content contained within a side navigation-->
 <md-sidenav-container class="sidenav-container">
 
     <!-- side menu -->
     <md-sidenav #sidenav class="sidenav">
         <md-list>
-         <md-list-item> <i class="material-icons main-menu-icon close" (click)="sidenav.close()">close</i><br/> </md-list-item>
-         <md-list-item> <strong>My Application</strong> </md-list-item>
-         <md-list-item> <a class="sidenav-link" routerLink="/tasks" (click)="sidenav.close()">Task List</a> </md-list-item>
-         <md-list-item> <a class="sidenav-link" routerLink="/about" (click)="sidenav.close()">About</a> </md-list-item>
+         <md-list-item> <a class="sidenav-link" routerLink="/tasks" (click)="sidenav.toggle()">Task List</a> </md-list-item>
+         <md-list-item> <a class="sidenav-link" routerLink="/about" (click)="sidenav.toggle()">About</a> </md-list-item>
         </md-list>        
     </md-sidenav>
     
     <!-- main site content -->
-    <div class="sidenav-content">
-
-        <!-- main menu header -->
-        <div class="main-menu-header">
-            <i class="material-icons main-menu-icon" (click)="sidenav.open()">menu</i> <strong>My Application</strong>
-        </div>
-        
+    <div class="sidenav-content">        
         <!-- current content as determined by application route -->
         <router-outlet></router-outlet>
     </div>

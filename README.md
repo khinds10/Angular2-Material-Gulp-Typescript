@@ -9,27 +9,27 @@ Small Angular2 application with Gulp as build system, using Google Material Desi
 
 - gulp
 
-> npm i -g gulp
+> sudo npm i -g gulp
 
 - gulp-cli
 
-> npm i -g gulp-cli
+> sudo npm i -g gulp-cli
 
 - typings
 
-> npm i -g typings@1.3.3
+> sudo npm i -g typings@1.3.3
 
 - typescript
 
-> npm i -g typescript@2.0.2
+> sudo npm i -g typescript@2.0.2
 
 - ts-node
 
-> npm i -g ts-node@1.3.0
+> sudo npm i -g ts-node@1.3.0
 
 - angular-cli
 
-> npm i -g angular-cli
+> sudo npm i -g angular-cli
 
 #### Cloning the repository
 

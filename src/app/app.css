@@ -18,13 +18,14 @@
     margin:10px 0px 10px 0px;
 }
 
-.main-menu-icon {
+.main-menu-item {
     cursor: pointer;
     vertical-align: bottom;
 }
 
 .main-menu-header {
     vertical-align:middle;
+    height: 35px;
 }
 
 .main-menu-icon.close {

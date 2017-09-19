@@ -5,11 +5,11 @@ import {Task} from "../models/task";
 export class TaskService {
 
     private tasks:Array<Task> = [
-        new Task("Task 1", false),
-        new Task("Task 2", false),
-        new Task("Task 3", false),
-        new Task("Task 4", false),
-        new Task("Task 5", false)
+        new Task("Get Milk", false),
+        new Task("Buy Eggs", false),
+        new Task("Brush Teeth", false),
+        new Task("Learn Angular2", false),
+        new Task("Read Books", false)
     ];
 
     getTasks():Array<Task> {
