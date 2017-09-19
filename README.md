@@ -70,44 +70,80 @@ Resources
 
 - [A step-by-step tutorial](http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html)
 
-
 ## Project File Structure and Setup
+
 >	Angular2-Material-Gulp-Typescript
+
 >	|   .gitignore
+
 >	|   bs-config.json  	-> BrowserSync configuration
+
 >	|   gulpfile.ts     	-> Gulp in TypeScript
+
 >	|   package.json    	-> npm configuration
+
 >	|   tsconfig.json   	-> TypeScript configuration
+
 >	|   typings.json    	-> TypeScript typings definitions
+
 >	|   tslint.json     	-> tslint configuration
+
 >	|
+
 >	\---src
+
 >	│   │   index.html               -> Starting point for the application
+
 >	│   │   systemjs.config.js       -> SystemJS configuration
+
 >	│   │
+
 >	│   \---app                         -> Application modules
+
 >	│       │   app.component.ts        -> Main application component
+
 >	│       │   app.html              	-> Main application template 
+
 >	│       │   app.module.ts         	-> Application module definition
+
 >	│       │   app.routing.ts        	-> Routing configuration
+
 >	│       │   main.ts               	-> Application bootstrap
+
 >	│       │
+
 >	│       \---about 
+
 >	│       │   └───components
+
 >	│       │           about.components.ts
+
 >	│       │           about.html
+
 >	│       │
+
 >	│       \---todo
+
 >	│           ├───components
+
 >	│           │       task-list.component.ts
+
 >	│           │       task-list.css
+
 >	│           │       task-list.html
+
 >	│           │       task.component.ts
+
 >	│           │       task.html
+
 >	│           │
+
 >	│           \---models
+
 >	│           │       task.ts
+
 >	│           │
+
 >	│           \---services
+
 >	│                   task-service.ts
->
